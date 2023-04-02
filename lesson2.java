@@ -17,6 +17,7 @@
         
 //     }
 // }
+import java.io.IOException;
 import java.util.Scanner;
 
 public class lesson2 {
@@ -29,17 +30,24 @@ public class lesson2 {
         // System.out.println(l2SecondTask.getUniqueSequence());
 
         // StringBuilder stringBuilder = new StringBuilder("abcdefg");
-        // System.out.println(stringBuilder);
-        // System.out.println(stringBuilder.reverse());
-        l2ThirdTask l2ThirdTask = new l2ThirdTask();
-        Scanner in = new Scanner(System.in);
-        String string = in.next();
-        in.close();
-        l2ThirdTask.getResult(string);
-        System.out.println(isPalyndromeAnottherMethod(string));
-    }
+    //     // System.out.println(stringBuilder);
+    //     // System.out.println(stringBuilder.reverse());
+    //     l2ThirdTask l2ThirdTask = new l2ThirdTask();
+    //     Scanner in = new Scanner(System.in);
+    //     String string = in.next();
+    //     in.close();
+    //     l2ThirdTask.getResult(string);
+    //     System.out.println(isPalyndromeAnottherMethod(string));
+    // }
 
-    public static Boolean isPalyndromeAnottherMethod(String string){
-        return string.equals((new StringBuilder(string)).reverse().toString());
+    // public static Boolean isPalyndromeAnottherMethod(String string){
+    //     return string.equals((new StringBuilder(string)).reverse().toString());
+    l2FourthTask l2fourthTask = new l2FourthTask();
+    try {
+        l2fourthTask.writer();
+    } catch (IOException e){
+        e.printStackTrace();
+    }
     }
 }
+
